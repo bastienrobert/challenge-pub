@@ -138,6 +138,7 @@ header {
       font-weight: 100;
       margin-bottom: 4em;
       border-radius: 3px;
+      box-shadow: 20px 20px 0px #95b39c;
       h2 {
         text-align: center;
         font-size: 1.6em;
@@ -146,17 +147,6 @@ header {
       p {
         line-height: 25px;
         text-align: left;
-      }
-      &:before {
-        content: "";
-        position: absolute;
-        width: 61.6%;
-        height: 230px;
-        background-color: #95b39c;
-        z-index: -1;
-        margin-left: -29%;
-        margin-top: -10px;
-        border-radius: 3px;
       }
     }
     img {
@@ -229,12 +219,13 @@ header {
   }
   .advertisers {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
     text-align: left;
-    margin-left: 5em;
     .left,
     .right {
-      width: 50%;
       li {
+        margin: 0 1em;
         h5 {
           margin-bottom: 1em;
           color: #95b39c;
@@ -260,6 +251,34 @@ header {
       height: 6em;
       width: auto;
       margin: 2em;
+    }
+  }
+}
+
+@media screen and (max-width:960px) {
+  #details {
+    display: block;
+    .container, .side {
+      display: block;
+      width: 100%;
+      padding: 0;
+    }
+    .advertisers {
+      .left, .right {
+        text-align: center;
+      }
+    }
+    .side {
+      text-align: center;
+      ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        li {
+          margin: 1em 1em;
+        }
+      }
     }
   }
 }

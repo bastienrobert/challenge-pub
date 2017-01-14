@@ -158,7 +158,8 @@ header {
       color: #FFF;
       font-weight: 100;
       margin-bottom: 4em;
-      border-radius: 3px; }
+      border-radius: 3px;
+      box-shadow: 20px 20px 0px #95b39c; }
       #details .container .presentation h2 {
         text-align: center;
         font-size: 1.6em;
@@ -166,16 +167,6 @@ header {
       #details .container .presentation p {
         line-height: 25px;
         text-align: left; }
-      #details .container .presentation:before {
-        content: "";
-        position: absolute;
-        width: 61.6%;
-        height: 230px;
-        background-color: #95b39c;
-        z-index: -1;
-        margin-left: -29%;
-        margin-top: -10px;
-        border-radius: 3px; }
     #details .container img {
       width: 103%;
       margin-left: -10px;
@@ -233,11 +224,16 @@ header {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    text-align: left;
-    margin-left: 5em; }
-    #details .advertisers .left,
-    #details .advertisers .right {
-      width: 50%; }
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    text-align: left; }
+    #details .advertisers .left li,
+    #details .advertisers .right li {
+      margin: 0 1em; }
       #details .advertisers .left li h5,
       #details .advertisers .right li h5 {
         margin-bottom: 1em;
@@ -259,3 +255,30 @@ header {
       height: 6em;
       width: auto;
       margin: 2em; }
+
+@media screen and (max-width: 960px) {
+  #details {
+    display: block; }
+    #details .container, #details .side {
+      display: block;
+      width: 100%;
+      padding: 0; }
+    #details .advertisers .left, #details .advertisers .right {
+      text-align: center; }
+    #details .side {
+      text-align: center; }
+      #details .side ul {
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+        justify-content: space-around;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center; }
+        #details .side ul li {
+          margin: 1em 1em; } }
