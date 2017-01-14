@@ -282,3 +282,19 @@ header {
         align-items: center; }
         #details .side ul li {
           margin: 1em 1em; } }
+
+@media screen and (max-width: 750px) {
+  #intro {
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+    #intro .video {
+      width: 100%; }
+    #intro .side {
+      width: 100%;
+      text-align: center;
+      margin-top: 2em; }
+      #intro .side .button {
+        display: block;
+        width: 50%;
+        margin: 0 auto 2em; } }
