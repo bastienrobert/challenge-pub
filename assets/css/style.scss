@@ -71,7 +71,7 @@ header {
     margin-left: 3em;
   }
   .logo {
-    height: 8em;
+    height: 9em;
   }
   div {
     margin-right: 3em;
@@ -103,17 +103,16 @@ header {
     .bloc {
       margin-bottom: 2em;
       h1,
-      h2{
-        margin-bottom: .6em;
-      }
-      h1,
       h2 {
+        margin-bottom: .6em;
         font-size: 1.5em;
+        color: #4e888e;
       }
       h5 {
         font-size: .7em;
         text-transform: uppercase;
         margin: .4em 0;
+        color: #95b39c;
         span {
           text-transform: capitalize;
         }
@@ -126,11 +125,12 @@ header {
 #details {
   display: flex;
   justify-content: space-between;
-  margin: 1em 2em;
+  margin: 2em 2em 1em;
   .container {
     width: 65%;
     padding: 0 2em;
     text-align: center;
+    margin-top: 1.5em;
     .presentation {
       background-color: #4e888e;
       padding: 2em 3em;
@@ -149,9 +149,9 @@ header {
         text-align: left;
       }
     }
-    img {
+    .iut-pic {
       width: 103%;
-      margin-left: -10px;
+      margin: 3em 0 2em -10px;
       border-radius: 3px;
     }
     .title {
@@ -222,6 +222,7 @@ header {
     flex-wrap: wrap;
     justify-content: space-around;
     text-align: left;
+    margin-top: 2.5em;
     .left,
     .right {
       li {
@@ -245,6 +246,10 @@ header {
   margin: 3em auto 1em;
   width: 75%;
   text-align: center;
+  .title {
+    margin-bottom: 1em;
+    display: inline-block;
+  }
   .iut {
     text-align: center;
     img {
@@ -258,12 +263,21 @@ header {
 @media screen and (max-width:960px) {
   #details {
     display: block;
+    margin-top: 1em;
+    .iut-pic {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+    .container {
+      margin-top: 0;
+    }
     .container, .side {
       display: block;
       width: 100%;
       padding: 0;
     }
     .advertisers {
+      margin-top: 0;
       .left, .right {
         text-align: center;
       }
@@ -280,6 +294,9 @@ header {
         }
       }
     }
+  }
+  #iut-logos .title {
+    display: inline;
   }
 }
 

@@ -95,7 +95,7 @@ header {
     width: 7em;
     margin-left: 3em; }
   header .logo {
-    height: 8em; }
+    height: 9em; }
   header div {
     margin-right: 3em;
     width: 7em; }
@@ -128,14 +128,14 @@ header {
       margin-bottom: 2em; }
       #intro .side .bloc h1,
       #intro .side .bloc h2 {
-        margin-bottom: .6em; }
-      #intro .side .bloc h1,
-      #intro .side .bloc h2 {
-        font-size: 1.5em; }
+        margin-bottom: .6em;
+        font-size: 1.5em;
+        color: #4e888e; }
       #intro .side .bloc h5 {
         font-size: .7em;
         text-transform: uppercase;
-        margin: .4em 0; }
+        margin: .4em 0;
+        color: #95b39c; }
         #intro .side .bloc h5 span {
           text-transform: capitalize; }
 
@@ -147,11 +147,12 @@ header {
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  margin: 1em 2em; }
+  margin: 2em 2em 1em; }
   #details .container {
     width: 65%;
     padding: 0 2em;
-    text-align: center; }
+    text-align: center;
+    margin-top: 1.5em; }
     #details .container .presentation {
       background-color: #4e888e;
       padding: 2em 3em;
@@ -167,9 +168,9 @@ header {
       #details .container .presentation p {
         line-height: 25px;
         text-align: left; }
-    #details .container img {
+    #details .container .iut-pic {
       width: 103%;
-      margin-left: -10px;
+      margin: 3em 0 2em -10px;
       border-radius: 3px; }
     #details .container .title {
       display: inline-block;
@@ -230,7 +231,8 @@ header {
     -webkit-justify-content: space-around;
     -ms-flex-pack: distribute;
     justify-content: space-around;
-    text-align: left; }
+    text-align: left;
+    margin-top: 2.5em; }
     #details .advertisers .left li,
     #details .advertisers .right li {
       margin: 0 1em; }
@@ -249,6 +251,9 @@ header {
   margin: 3em auto 1em;
   width: 75%;
   text-align: center; }
+  #iut-logos .title {
+    margin-bottom: 1em;
+    display: inline-block; }
   #iut-logos .iut {
     text-align: center; }
     #iut-logos .iut img {
@@ -258,13 +263,21 @@ header {
 
 @media screen and (max-width: 960px) {
   #details {
-    display: block; }
+    display: block;
+    margin-top: 1em; }
+    #details .iut-pic {
+      margin-top: 0;
+      margin-bottom: 0; }
+    #details .container {
+      margin-top: 0; }
     #details .container, #details .side {
       display: block;
       width: 100%;
       padding: 0; }
-    #details .advertisers .left, #details .advertisers .right {
-      text-align: center; }
+    #details .advertisers {
+      margin-top: 0; }
+      #details .advertisers .left, #details .advertisers .right {
+        text-align: center; }
     #details .side {
       text-align: center; }
       #details .side ul {
@@ -281,7 +294,9 @@ header {
         -ms-flex-align: center;
         align-items: center; }
         #details .side ul li {
-          margin: 1em 1em; } }
+          margin: 1em 1em; }
+  #iut-logos .title {
+    display: inline; } }
 
 @media screen and (max-width: 750px) {
   #intro {
