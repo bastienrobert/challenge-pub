@@ -30,6 +30,11 @@ table {
 a {
   text-decoration: none; }
 
+/* Fonts */
+@font-face {
+  font-family: CaviarDreams;
+  src: url(../fonts/CaviarDreams.ttf); }
+
 /* Global */
 body {
   font-family: sans-serif;
@@ -130,7 +135,10 @@ header {
       #intro .side .bloc h2 {
         margin-bottom: .6em;
         font-size: 1.5em;
-        color: #4e888e; }
+        color: #4e888e;
+        font-weight: 300; }
+      #intro .side .bloc h2 {
+        text-transform: uppercase; }
       #intro .side .bloc h5 {
         font-size: .7em;
         text-transform: uppercase;
@@ -164,7 +172,8 @@ header {
       #details .container .presentation h2 {
         text-align: center;
         font-size: 1.6em;
-        margin-bottom: .6em; }
+        margin-bottom: .6em;
+        font-family: CaviarDreams; }
       #details .container .presentation p {
         line-height: 25px;
         text-align: left; }
@@ -246,9 +255,20 @@ header {
         width: auto;
         margin-bottom: 2em; }
 
+/* Footer */
+footer {
+  padding: 1em 0;
+  text-align: center;
+  background-color: #4e888e;
+  color: #FFF;
+  font-weight: 200; }
+  footer a {
+    color: #FFF;
+    font-weight: 400; }
+
 /* Logos IUT */
 #iut-logos {
-  margin: 3em auto 1em;
+  margin: 3em auto 2em;
   width: 75%;
   text-align: center; }
   #iut-logos .title {
