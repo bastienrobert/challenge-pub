@@ -327,8 +327,9 @@ footer {
 @media screen and (max-width:750px) {
   #intro {
     flex-direction: column;
+    text-align: center;
     .video {
-      width: 100%;
+      width: 90%;
     }
     .side {
       width: 100%;

@@ -322,9 +322,10 @@ footer {
   #intro {
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
-    flex-direction: column; }
+    flex-direction: column;
+    text-align: center; }
     #intro .video {
-      width: 100%; }
+      width: 90%; }
     #intro .side {
       width: 100%;
       text-align: center;
