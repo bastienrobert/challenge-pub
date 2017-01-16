@@ -90,6 +90,9 @@ header {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
@@ -176,7 +179,7 @@ header {
         font-family: CaviarDreams; }
       #details .container .presentation p {
         line-height: 25px;
-        text-align: left; }
+        text-align: justify; }
     #details .container .iut-pic {
       width: 103%;
       margin: 3em 0 2em -10px;
@@ -275,21 +278,38 @@ footer {
     margin-bottom: 1em;
     display: inline-block; }
   #iut-logos .iut {
-    text-align: center; }
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around; }
     #iut-logos .iut img {
       height: 6em;
       width: auto;
-      margin: 2em; }
+      margin: 1em 2em; }
 
 @media screen and (max-width: 960px) {
+  #intro {
+    margin: 2em auto; }
+    #intro .video {
+      margin: auto; }
+      #intro .video iframe {
+        width: 95%; }
   #details {
     display: block;
     margin-top: 1em; }
-    #details .iut-pic {
-      margin-top: 0;
-      margin-bottom: 0; }
     #details .container {
       margin-top: 0; }
+      #details .container .presentation {
+        box-shadow: none; }
+      #details .container .iut-pic {
+        margin: 0 auto;
+        width: 95%;
+        height: auto; }
     #details .container, #details .side {
       display: block;
       width: 100%;
@@ -297,7 +317,11 @@ footer {
     #details .advertisers {
       margin-top: 0; }
       #details .advertisers .left, #details .advertisers .right {
-        text-align: center; }
+        text-align: center;
+        width: 42%; }
+        #details .advertisers .left li img, #details .advertisers .right li img {
+          width: auto;
+          height: 4em; }
     #details .side {
       text-align: center; }
       #details .side ul {
@@ -315,10 +339,19 @@ footer {
         align-items: center; }
         #details .side ul li {
           margin: 1em 1em; }
-  #iut-logos .title {
-    display: inline; } }
+  #iut-logos .iut img {
+    height: 4.5em;
+    width: auto; } }
 
 @media screen and (max-width: 750px) {
+  header {
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+    header .iut-montaigne {
+      margin: 1em 3em; }
+    header div {
+      display: none; }
   #intro {
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
@@ -333,4 +366,7 @@ footer {
       #intro .side .button {
         display: block;
         width: 50%;
-        margin: 0 auto 2em; } }
+        margin: 0 auto 2em; }
+  #details .advertisers .left, #details .advertisers .right {
+    display: block;
+    width: 100%; } }
