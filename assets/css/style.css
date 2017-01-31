@@ -60,6 +60,14 @@ body {
     .button.main:hover {
       color: #FFF;
       background-color: #95b39c; }
+    .button.main.right {
+      margin-left: -7px;
+      border-radius: 0 3px 3px 0; }
+    .button.main.center {
+      margin-left: -7px;
+      border-radius: 0; }
+    .button.main.left {
+      border-radius: 3px 0 0 3px; }
 
 .title {
   padding: 12px 21px;
@@ -132,6 +140,21 @@ header {
       margin: 0 auto; }
   #intro .side {
     width: 30%; }
+    #intro .side .social {
+      display: block;
+      margin-bottom: 2em; }
+      #intro .side .social a {
+        display: inline-block;
+        height: 3em;
+        width: 3em;
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat; }
+        #intro .side .social a.facebook {
+          background-image: url(../img/icons/facebook.svg); }
+        #intro .side .social a.twitter {
+          background-image: url(../img/icons/twitter.svg);
+          margin-right: 2em; }
     #intro .side .bloc {
       margin-bottom: 2em; }
       #intro .side .bloc h1,
@@ -291,6 +314,24 @@ footer {
       height: 6em;
       width: auto;
       margin: 1em 2em; }
+
+#map,
+#map iframe {
+  width: 100vw;
+  height: 30vh; }
+
+@media screen and (max-width: 1150px) {
+  #intro .button {
+    width: 70%;
+    text-align: center; }
+    #intro .button.right {
+      margin-left: 0;
+      border-radius: 3px; }
+    #intro .button.center {
+      margin-left: 0;
+      border-radius: 3px; }
+    #intro .button.left {
+      border-radius: 3px; } }
 
 @media screen and (max-width: 960px) {
   #intro {

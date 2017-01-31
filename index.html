@@ -12,13 +12,13 @@
   <meta itemprop="description" content="Site officiel des étudiants participants au Challenge de la Publicité & Communication 2017 qui aura lieu le 24 mars.">
   <meta itemprop="image" content="assets/img/thumbnail.png">
   <!-- Facebook metas -->
-  <meta property="og:url" content="">
+  <meta property="og:url" content="https://www.facebook.com/challengedelapub2017">
   <meta property="og:title" content="Challenge de la PUB - IUT Bordeaux Montaigne">
   <meta property="og:description" content="Site officiel des étudiants participants au Challenge de la Publicité & Communication 2017 qui aura lieu le 24 mars.">
   <meta property="og:site_name" content="Challenge de la Pub / Com 2017 à Bordeaux">
   <meta property="og:image" content="assets/img/thumbnail.png">
-  <meta property="fb:admins" content="">
-  <meta property="fb:app_id" content="">
+  <meta property="fb:admins" content="100000922688228, 1194673429">
+  <meta property="fb:app_id" content="1903753046520078">
   <meta property="og:type" content="page">
   <meta property="og:locale" content="fr_FR">
   <!-- Style -->
@@ -45,6 +45,10 @@
     <div class="side">
       <div class="bloc" id="countdown"></div>
       <div class="bloc">
+        <div class="social">
+          <a href="#" class="twitter"></a>
+          <a href="#" class="facebook"></a>
+        </div>
         <h5><span>Bordeaux</span>, France</h5>
         <h1>Challenge de la PUB</h1>
         <h2>7ème édition</h2>
@@ -59,7 +63,9 @@
         <h2>24 mars 2017</h2>
         <h2>9:00</h2>
       </div>
-      <a href="#" class="button main">Inscription</a>
+      <a href="#" class="button main left">Réglement</a>
+      <!-- <a href="#" class="button main center">Brief</a> -->
+      <a href="#" class="button main right">Presse</a>
     </div>
   </section>
   <section id="details">
@@ -88,7 +94,7 @@
       </div>
     </div>
     <div class="side">
-      <span class="title">Le Jury</span>
+      <span class="title">Ancien Jury</span>
       <ul>
         <a href="#"><li style="background: url(http://lorempicsum.com/up/255/200/5)"><span>Isabelle Mercier</span><hr><span>Communicante</span></li></a>
         <a href="#"><li style="background: url(http://lorempicsum.com/up/255/200/5)"><span>Isabelle Mercier</span><hr><span>Communicante</span></li></a>
@@ -117,9 +123,20 @@
       <img src="assets/img/iut/tours.png" alt="tours">
     </div>
   </section>
+  <section id="map">
+    <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAYgrXzIHW8Be-hXi7j9_3xxYQbSSaByDY&q=IUT+Bordeaux+Montaigne,Bordeaux"></iframe>
+  </section>
   <footer>
     Challenge de la PUB &copy;2017 - Designed by <a href="https://fr.linkedin.com/in/joshua-richard-12b9a4129" target="_blank">Joshua Richard</a> - Developed by <a href="https://www.linkedin.com/in/bastienrobert" target="_blank">Bastien Robert</a> & <a href="https://www.linkedin.com/in/sebastien-gaya" target="_blank">Sébastien Gaya</a> - All Rights Reserved.
   </footer>
   <script src="assets/js/countdown.js"></script>
+  <script>
+    function initMap() {
+    var map = new google.maps.Map(document.getElementById('map'), {
+    zoom: 20,
+    disableDefaultUI: true
+    });
+    }
+</script>
 </body>
 </html>
