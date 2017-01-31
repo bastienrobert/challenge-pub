@@ -149,7 +149,8 @@ header {
         width: 3em;
         background-position: center;
         background-size: contain;
-        background-repeat: no-repeat; }
+        background-repeat: no-repeat;
+        vertical-align: middle; }
         #intro .side .social a.facebook {
           background-image: url(../img/icons/facebook.svg); }
         #intro .side .social a.twitter {
@@ -224,7 +225,10 @@ header {
       margin-bottom: 2em;
       border-radius: 4px;
       text-align: center;
-      transition: all .2s; }
+      transition: all .2s;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center; }
       #details .side li span:first-child {
         padding-top: 4.5em;
         display: block; }
@@ -294,7 +298,7 @@ footer {
 
 /* Logos IUT */
 #iut-logos {
-  margin: 3em auto 2em;
+  margin: 3em auto 5em;
   width: 75%;
   text-align: center; }
   #iut-logos .title {
@@ -317,8 +321,13 @@ footer {
 
 #map,
 #map iframe {
-  width: 100vw;
   height: 30vh; }
+
+#map {
+  width: 100vw; }
+
+#map iframe {
+  width: 100%; }
 
 @media screen and (max-width: 1150px) {
   #intro .button {
