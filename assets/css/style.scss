@@ -10,7 +10,6 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 /* Global */
 body {
   font-family: sans-serif;
-  background-color: #f9ebdd;
 }
 a {
 
@@ -326,7 +325,7 @@ footer {
   height: 30vh;
 }
 #map {
-  width: 100vw;
+  width: 100%;
 }
 #map iframe {
   width: 100%;

@@ -37,8 +37,7 @@ a {
 
 /* Global */
 body {
-  font-family: sans-serif;
-  background-color: #f9ebdd; }
+  font-family: sans-serif; }
 
 .button {
   text-transform: uppercase;
@@ -324,7 +323,7 @@ footer {
   height: 30vh; }
 
 #map {
-  width: 100vw; }
+  width: 100%; }
 
 #map iframe {
   width: 100%; }
